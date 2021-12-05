@@ -1,3 +1,29 @@
+Skip to content
+
+Search…
+All gists
+Back to GitHub
+Sign in
+Sign up
+Instantly share code, notes, and snippets.
+
+@LondonAppDev
+LondonAppDev/.gitignore Secret
+Last active 16 days ago
+13
+4
+ Code
+ Revisions 3
+ Stars 13
+ Forks 4
+<script src="https://gist.github.com/LondonAppDev/dd166e24f69db4404102161df02a63ff.js"></script>
+Python .gitignore
+.gitignore
+
+# Created by https://www.gitignore.io/api/python,vagrant
+# Edit at https://www.gitignore.io/?templates=python,vagrant
+
+### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -47,7 +73,6 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.py,cover
 .hypothesis/
 .pytest_cache/
 
@@ -59,7 +84,6 @@ coverage.xml
 *.log
 local_settings.py
 db.sqlite3
-db.sqlite3-journal
 
 # Flask stuff:
 instance/
@@ -84,19 +108,8 @@ ipython_config.py
 # pyenv
 .python-version
 
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
-# Celery stuff
+# celery beat schedule file
 celerybeat-schedule
-celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
@@ -127,3 +140,33 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+### Python Patch ###
+.venv/
+
+### Vagrant ###
+# General
+.vagrant/
+
+# Log files (if you are creating logs in debug mode, uncomment this)
+# *.logs
+
+### Vagrant Patch ###
+*.box
+
+# End of https://www.gitignore.io/api/python,vagrant
+eb-package.zip
+static/
+ to join this conversation on GitHub. Already have an account? Sign in to comment
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
